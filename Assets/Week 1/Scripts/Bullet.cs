@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    float speed = 5f;
+    float speed = 10f;
     Rigidbody2D rigidbody;
         // Start is called before the first frame update
    private void Start()
@@ -18,14 +18,14 @@ public class Bullet : MonoBehaviour
     void Update()
     {
                
-            transform.Translate(speed * Time.deltaTime, 0, 0);
+            //transform.Translate(speed * Time.deltaTime, 0, 0);
         
     }
 
     private void FixedUpdate()
     {
         Vector2 direction = new Vector2(speed * Time.deltaTime, 0);
-        rigidbody.MovePosition(rigidbody.position * direction);
+        rigidbody.MovePosition(rigidbody.position + direction);
     }
 
     private void OnCollisionEnter(Collision collision)
