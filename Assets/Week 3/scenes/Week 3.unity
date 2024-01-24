@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 500
-  steeringSpeed: 100
+  steeringSpeed: 115
 --- !u!1 &753294915
 GameObject:
   m_ObjectHideFlags: 0
