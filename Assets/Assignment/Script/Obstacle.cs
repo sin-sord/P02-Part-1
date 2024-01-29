@@ -22,5 +22,11 @@ public class Obstacle : MonoBehaviour
     {
         transform.Rotate(0,0, -RotationSpeed * Time.deltaTime);
         rigidbody.AddForce(direction * resistance * Time.deltaTime);
+       
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("player got slammed");
     }
 }
