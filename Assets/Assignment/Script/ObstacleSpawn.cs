@@ -25,6 +25,7 @@ public class ObstacleSpawn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // this will call on the obstacle prefab to spawn at each location, in this case spawn1-4
         Instantiate(rotator, spawn1.position, spawn1.rotation);
         Instantiate(rotator, spawn2.position, spawn2.rotation);
         Instantiate(rotator, spawn3.position, spawn3.rotation);

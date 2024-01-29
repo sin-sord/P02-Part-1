@@ -12,7 +12,7 @@ public class Obstacle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // this calls on the Rigidbody2D on Unity so that the obstacle can have the rigidbody be the reason for collision
         rigidbody = GetComponent<Rigidbody2D>();
 
     }
@@ -20,6 +20,7 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // this is what makes the obstacle rotate and have for to be able to push the player
         transform.Rotate(0,0, -RotationSpeed * Time.deltaTime);
         rigidbody.AddForce(direction * resistance * Time.deltaTime);
        
@@ -27,6 +28,7 @@ public class Obstacle : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // this will send a message to make sure the player collides with the obstacle
         Debug.Log("player got slammed");
     }
 }
