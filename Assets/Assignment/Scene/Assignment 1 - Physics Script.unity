@@ -120769,9 +120769,6 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 0.26799107, y: 4.3762813}
       - {x: -0.09319019, y: 4.5076566}
-      - {x: -3.8837605, y: 2.40131}
-      - {x: -9.885128, y: 2.5459418}
-      - {x: -10.035364, y: 3.7384887}
       - {x: -10.496971, y: 4.482621}
       - {x: -25.060482, y: 4.5017204}
       - {x: -25.06528, y: -3.2874146}
@@ -121246,6 +121243,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 58222601}
     m_Modifications:
+    - target: {fileID: 1548700813858833665, guid: bd87460a9a06ff945b6b41a4d3267137, type: 3}
+      propertyPath: spawn3
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548700813858833665, guid: bd87460a9a06ff945b6b41a4d3267137, type: 3}
+      propertyPath: spawn4
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1879367960738810049, guid: bd87460a9a06ff945b6b41a4d3267137, type: 3}
       propertyPath: m_LocalPosition.x
       value: -63.1
