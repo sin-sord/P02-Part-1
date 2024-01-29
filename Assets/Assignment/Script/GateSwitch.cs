@@ -13,7 +13,7 @@ public class GateSwitch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        // this calls on the SpriteRenderer to be able to change its appearance
         spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
@@ -26,6 +26,7 @@ public class GateSwitch : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // this is saying that if the gate is closed (false) the trigger is green, if it is open (true) it turns red
         if(Gate.activeInHierarchy)
         {
             Gate.SetActive(false);
@@ -40,6 +41,7 @@ public class GateSwitch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // if the player activates the trigger, the gate will close again or stay open if not triggered.
         if(Gate.activeInHierarchy)
         {
             Gate.SetActive(false);
