@@ -10,8 +10,8 @@ public class PlayerControls : MonoBehaviour
     public float speedMovement = 950;
     public float turnSpeed = 400;
     public Rigidbody2D rigidbody;
-    public float speedMax;
-    public float carForce = 1000;
+    public float speedMax = 1500;
+    public float carForce = 200;
 
     // Start is called before the first frame update
     void Start()

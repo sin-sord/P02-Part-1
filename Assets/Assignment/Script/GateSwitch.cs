@@ -6,6 +6,7 @@ public class GateSwitch : MonoBehaviour
 {
     public GameObject Gate;
     public GameObject Switch;
+    public GameObject SwitchReset;
     SpriteRenderer spriteRenderer;
     public Transform SwitchSpawn;
 
@@ -36,4 +37,16 @@ public class GateSwitch : MonoBehaviour
 
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(Gate.activeInHierarchy)
+        {
+            Gate.SetActive(false);
+        } else
+        {
+            Gate.SetActive(true);
+        }
+    }
+
 }
